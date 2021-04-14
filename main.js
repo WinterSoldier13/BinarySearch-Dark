@@ -8,7 +8,8 @@ function createWindow() {
     win = new BrowserWindow({
         webPreferences: {
             preload: path.join(__dirname, 'darkMode.js')
-        }
+        },
+        icon: path.join(__dirname, 'build/icon.png')
     })
     //    win.loadURL(url.format ({ 
     //       pathname: path.join(__dirname, 'index.html'), 
